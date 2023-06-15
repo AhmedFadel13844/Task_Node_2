@@ -24,7 +24,6 @@ function getProducts(products){
    }
    new_products.push(cat_products);
  }
- console.log(new_products);
  let fs = require("fs");
 
 fs.writeFile('my_data.json', JSON.stringify(new_products), err => {
@@ -42,6 +41,5 @@ fs.writeFile('my_data.json', JSON.stringify(new_products), err => {
  getProducts(products);
  
 }
-
 logJSONData();
 
